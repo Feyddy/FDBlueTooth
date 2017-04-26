@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch9-gg-hh3">
+                                <rect key="frame" x="56" y="120" width="263" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="v94-Vc-GaQ"/>
+                                </constraints>
+                                <state key="normal" title="GameKit框架"/>
+                                <connections>
+                                    <action selector="GameKitMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecx-sr-Smn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bH9-C3-Wa0">
+                                <rect key="frame" x="56" y="290" width="263" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8xS-yb-XB4"/>
+                                </constraints>
+                                <state key="normal" title="CoreBluetooth框架"/>
+                                <connections>
+                                    <action selector="CoreBluetoothMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lS8-jg-PCw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zq-eW-gfH">
+                                <rect key="frame" x="56" y="205" width="263" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bpW-Qo-0V4"/>
+                                </constraints>
+                                <state key="normal" title="MultipeerConnectivity框架"/>
+                                <connections>
+                                    <action selector="MultipeerConnectivityMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cre-GY-hMm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1zq-eW-gfH" firstAttribute="top" secondItem="Ch9-gg-hh3" secondAttribute="bottom" constant="45" id="1C7-zj-kNr"/>
+                            <constraint firstItem="Ch9-gg-hh3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="8kH-jA-QDL"/>
+                            <constraint firstItem="bH9-C3-Wa0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="ABy-Lg-6GN"/>
+                            <constraint firstItem="bH9-C3-Wa0" firstAttribute="top" secondItem="1zq-eW-gfH" secondAttribute="bottom" constant="45" id="Dya-y9-bvz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bH9-C3-Wa0" secondAttribute="trailing" constant="40" id="X40-Ew-J95"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1zq-eW-gfH" secondAttribute="trailing" constant="40" id="gl1-Ca-V4Y"/>
+                            <constraint firstItem="Ch9-gg-hh3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="hHl-D4-SQG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ch9-gg-hh3" secondAttribute="trailing" constant="40" id="na9-Kh-Ev2"/>
+                            <constraint firstItem="1zq-eW-gfH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="qyv-cD-xh1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
